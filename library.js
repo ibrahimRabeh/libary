@@ -28,7 +28,6 @@ const book = new Book(bookTitle.value, bookAuthor.value, bookgenre.value);
   const bookItem = document.createElement("div");
     bookItem.classList.add("item");
     bookItem.classList.add("animation");
-    bookItem.classList.add("Left");
     bookItem.innerHTML = `
             <div class="book-item animation">
                 <div class="book-item__title animation">${book.title}</div>
@@ -71,7 +70,6 @@ function displayBooks() {
     const bookItem = document.createElement("div");
     bookItem.classList.add("animation");
     bookItem.classList.add("item");
-    bookItem.classList.add("Left");
     bookItem.innerHTML = `
             <div class="book-item animation">
                 <div class="book-item__title animation">${book.title}</div>
